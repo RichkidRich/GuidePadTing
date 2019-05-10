@@ -124,6 +124,79 @@
             </objects>
             <point key="canvasLocation" x="1657.9710144927537" y="-328.125"/>
         </scene>
+        <!--Monsters-->
+        <scene sceneID="xxq-vq-RVp">
+            <objects>
+                <viewController id="2ew-bj-p8c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kd4-9a-Pog">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Monster Book" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cjc-f2-M8H">
+                                <rect key="frame" x="20" y="105" width="232" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search Monsters by ID or Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNp-M4-gqi">
+                                <rect key="frame" x="20" y="156" width="374" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" ambiguous="YES" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-2w-MVH">
+                                <rect key="frame" x="0.0" y="182" width="414" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2ew-bj-p8c" id="ynB-zc-1bj"/>
+                                </connections>
+                            </searchBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WXv-xu-lzD">
+                                <rect key="frame" x="20" y="226" width="374" height="587"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gxg-gv-ohN">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="587"/>
+                                        <color key="backgroundColor" red="0.62340106870000001" green="0.32367601569999999" blue="0.12183155230000001" alpha="0.53958516729999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Gxg-gv-ohN" secondAttribute="bottom" id="Y9y-wJ-FBj"/>
+                                    <constraint firstItem="Gxg-gv-ohN" firstAttribute="leading" secondItem="WXv-xu-lzD" secondAttribute="leading" id="g5U-y8-dcF"/>
+                                    <constraint firstItem="Gxg-gv-ohN" firstAttribute="top" secondItem="WXv-xu-lzD" secondAttribute="top" id="vgh-GC-b3N"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gxg-gv-ohN" secondAttribute="trailing" id="xLQ-uj-q6Z"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WXv-xu-lzD" firstAttribute="top" secondItem="kHh-2w-MVH" secondAttribute="bottom" id="7Im-ct-2bF"/>
+                            <constraint firstItem="Acq-Df-P3O" firstAttribute="trailing" secondItem="WXv-xu-lzD" secondAttribute="trailing" constant="20" id="VcY-fn-O0p"/>
+                            <constraint firstItem="WXv-xu-lzD" firstAttribute="bottom" secondItem="Acq-Df-P3O" secondAttribute="bottom" id="lAT-Fz-uaR"/>
+                            <constraint firstItem="WXv-xu-lzD" firstAttribute="leading" secondItem="Acq-Df-P3O" secondAttribute="leading" constant="20" id="m7j-ig-SiL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Acq-Df-P3O"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Monsters" id="rjh-hx-3BS"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="9yU-9M-YOW" id="ke8-l9-3O2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXV-26-j3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="9yU-9M-YOW">
+                    <connections>
+                        <outlet property="delegate" destination="2ew-bj-p8c" id="s93-MZ-Chu"/>
+                        <outlet property="searchBar" destination="kHh-2w-MVH" id="NUj-Xc-sYp"/>
+                        <outlet property="searchContentsController" destination="2ew-bj-p8c" id="DAi-bl-kdc"/>
+                        <outlet property="searchResultsDataSource" destination="2ew-bj-p8c" id="pQB-ru-XBR"/>
+                        <outlet property="searchResultsDelegate" destination="2ew-bj-p8c" id="IMf-h5-qnt"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="1020.5357142857142"/>
+        </scene>
         <!--Dungeon Table-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -168,7 +241,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Dungeons" image="second" id="cPa-gy-q4n" userLabel="Dungeon"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="1ek-y8-Uio" id="Oyb-Ux-Ma4"/>
                     </connections>
@@ -196,19 +269,19 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="fq2-hD-xSs" kind="relationship" relationship="viewControllers" id="7m3-X9-zYi"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="2ew-bj-p8c" kind="relationship" relationship="viewControllers" id="Y76-Ed-nbc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-435" y="777"/>
         </scene>
-        <!--Item-->
+        <!--MonsterThing-->
         <scene sceneID="5Df-8q-h9D">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fq2-hD-xSs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="first" id="1Lw-rv-5WN"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fq2-hD-xSs" userLabel="MonsterThing" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Monsters" selectedImage="first" id="1Lw-rv-5WN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZHo-DZ-Ecc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -255,6 +328,9 @@
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.6961219310760498" green="0.39276885986328125" blue="0.19740685820579529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES"/>
+                                                </accessibility>
                                                 <constraints>
                                                     <constraint firstItem="ZA1-aQ-ZyB" firstAttribute="leading" secondItem="RLr-Jn-3s8" secondAttribute="leading" constant="8" id="0j8-J5-3G8"/>
                                                     <constraint firstAttribute="bottom" secondItem="Ggy-kp-Ubq" secondAttribute="bottom" id="2B6-BM-kWq"/>
@@ -286,6 +362,9 @@
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.80121946334838867" green="0.57469755411148071" blue="0.32034748792648315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES"/>
+                                                </accessibility>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="DIt-m8-uWJ" secondAttribute="bottom" id="AlP-Vo-w4m"/>
                                                     <constraint firstAttribute="trailing" secondItem="DIt-m8-uWJ" secondAttribute="trailing" id="Ea3-Fa-rqx"/>
@@ -317,6 +396,9 @@
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.23975691199302673" green="0.58852106332778931" blue="0.33982595801353455" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES"/>
+                                                </accessibility>
                                                 <constraints>
                                                     <constraint firstItem="1yx-Y0-WcI" firstAttribute="top" secondItem="l7e-YV-OAm" secondAttribute="top" constant="8" id="1o4-Pf-za2"/>
                                                     <constraint firstItem="L7a-yw-TfC" firstAttribute="top" secondItem="l7e-YV-OAm" secondAttribute="top" id="6CD-Bs-mGF"/>
@@ -353,6 +435,9 @@
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.58195918798446655" green="0.26861381530761719" blue="0.25581949949264526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES"/>
+                                                </accessibility>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="C2w-iC-o40" secondAttribute="trailing" id="CGG-rc-GQD"/>
                                                     <constraint firstItem="UME-2i-WCy" firstAttribute="leading" secondItem="Zkp-Mm-ncl" secondAttribute="leading" id="Dav-DZ-p7w"/>
@@ -386,6 +471,9 @@
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.71205627918243408" green="0.64743977785110474" blue="0.2315903902053833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES"/>
+                                                </accessibility>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="bcB-8B-Kr7" secondAttribute="trailing" constant="8" id="4WL-sN-AER"/>
                                                     <constraint firstAttribute="trailing" secondItem="Uz0-K2-kcM" secondAttribute="trailing" id="Fnd-My-hyW"/>
