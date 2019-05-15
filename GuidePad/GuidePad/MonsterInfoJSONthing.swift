@@ -8,22 +8,19 @@
 
 import Foundation
 
-//IGNORE THIS FOR NOW
 
-//var arrayDict = NSMutableArray()
-//
-//let file = "download_card_data"
-//
-//func getPadData() {
-//    let path: NSString = Bundle.main.path(forResource: "download_card_data", ofType: "json")! as NSString
-//    let data: NSData = try! NSData(contentsOfFile: path as String, options: NSData.ReadingOptions.dataReadingMapped)
-//    
-//    startParsing(data: data)
-//}
-//
-//func startParsing(data: NSData) {
-//    let dict: NSDictionary!=(try! JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.mutableContainers)) as? NSDictionary
-//    for i in 0..<(dict.value(forKey: "card") as! NSArray).count {
-//        arrayDict.add((dict.value(forKey: "card") as! NSArray).object(at: i))
-//    }
-//}
+
+func readJSON() -> Any? {
+    var json: Any?
+    if let path = Bundle.main.path(forResource: "na_raw_cards", ofType: "json") {
+        do {
+            let fileURL = URL(fileURLWithPath: path)
+            let data = try Data(contentsOf: fileURL, options: .mappedIfSafe)
+            json = try? JSONSerialization.jsonObject(with: data)
+        } catch {
+            
+        }
+    }
+    return json
+}
+

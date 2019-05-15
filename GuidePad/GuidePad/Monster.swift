@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class Monster {
     
@@ -24,16 +25,16 @@ class Monster {
     var maxlvl: Int
     
     
-    init?( number: Int, name: String, maxlvl: Int /*hp: Int, atk: Int, rcv: Int, photo: UIImage*/) {
-        
+    init?( number: Int, name: String, maxlvl: Int, attribute: Int, subattribute: Int) {
+
         guard !name.isEmpty else {
             return nil
         }
-        
+
         guard (number >= 1) else {
             return nil
         }
-        
+
         self.number = number
         self.name = name
 //        self.photo = photo
@@ -41,6 +42,5 @@ class Monster {
 //        self.atk = atk
 //        self.rcv = rcv
         self.maxlvl = maxlvl
-        
     }
 }

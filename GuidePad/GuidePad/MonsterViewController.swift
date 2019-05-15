@@ -47,9 +47,9 @@ class MonsterViewController: UIViewController {
         if let monster = monster {
             navigationItem.title = monster.name
             monsterNameLabel.text = monster.name
-            monsterNumberLabel.text = String(monster.number)
-            monsterMaxLvlLabel.text = String(monster.maxlvl)
-            monsterImageView.image = UIImage(named: "MONS_0"+String(monster.number))
+//            monsterNumberLabel.text = String(monster.number)
+//            monsterMaxLvlLabel.text = String(monster.maxlvl)
+//            monsterImageView.image = UIImage(named: "MONS_0"+String(monster.number))
         }
     }
 
