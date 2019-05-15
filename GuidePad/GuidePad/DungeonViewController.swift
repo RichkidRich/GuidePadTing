@@ -10,28 +10,15 @@ import UIKit
 
 class DungeonViewController: UIViewController {
     
-    @IBOutlet var Specials: UIView!
-    @IBOutlet var Normals: UIView!
-    @IBOutlet var Technicals: UIView!
-    @IBOutlet var Multis: UIView!
-    @IBOutlet var Rankings: UIView!
-    @IBOutlet var RankingLabel: UILabel!
-    @IBOutlet var MultiLabel: UILabel!
+    
+    @IBOutlet var DungeonView: [UIView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Specials.layer.cornerRadius = 10;
-        Specials.layer.masksToBounds = true;
-        Normals.layer.cornerRadius = 10;
-        Normals.layer.masksToBounds = true;
-        Technicals.layer.cornerRadius = 10;
-        Technicals.layer.masksToBounds = true;
-        Multis.layer.cornerRadius = 10;
-        Multis.layer.masksToBounds = true;
-        Rankings.layer.cornerRadius = 10;
-        Rankings.layer.masksToBounds = true;
-        RankingLabel.sizeToFit();
-        MultiLabel.sizeToFit();
+        for dungeons in DungeonView {
+            dungeons.layer.cornerRadius = 10;
+            dungeons.layer.masksToBounds = true
+        }
         
         // Do any additional setup after loading the view.
     }
