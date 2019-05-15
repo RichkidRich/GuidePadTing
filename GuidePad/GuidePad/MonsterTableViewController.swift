@@ -18,15 +18,15 @@ class MonsterTableViewController: UITableViewController {
     //MARK: Private Methods
     
     private func loadSampleMonsters() {
-        guard let monster1 = Monster(number: 5002, name: "Aspiring Hero of Justice, Shirou Emiya", maxlvl: 110) else {
+        guard let monster1 = Monster(number: 5002, name: "Aspiring Hero of Justice, Shirou Emiya", maxlvl: 110, attribute: 1, subattribute: 3) else {
             fatalError("Unable to instantiate monster1")
         }
         
-        guard let monster2 = Monster(number: 5001, name: "Shirou Emiya", maxlvl: 99) else {
+        guard let monster2 = Monster(number: 5001, name: "Shirou Emiya", maxlvl: 99, attribute: 1, subattribute: 3) else {
             fatalError("Unable to instantiate monster2")
         }
         
-        guard let monster3 = Monster(number: 4997, name: "Witch of the Freezing Fists, Cherun", maxlvl: 99) else {
+        guard let monster3 = Monster(number: 4997, name: "Witch of the Freezing Fists, Cherun", maxlvl: 99, attribute: 1, subattribute: 2) else {
             fatalError("Unable to instantiate monster3")
         }
         

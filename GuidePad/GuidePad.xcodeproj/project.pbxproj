@@ -17,6 +17,7 @@
 		5E1F7DDE227D8B8B00713C0B /* GuidePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1F7DDD227D8B8B00713C0B /* GuidePadUITests.swift */; };
 		5E1F7DEC227D8C6600713C0B /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1F7DEB227D8C6600713C0B /* Monster.swift */; };
 		5E41E34F228587D500C9FB6F /* DungeonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41E34E228587D500C9FB6F /* DungeonViewController.swift */; };
+		5E7099F2228C42FB002F3BA9 /* na_raw_cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E7099F1228C42FB002F3BA9 /* na_raw_cards.json */; };
 		5E774BD0227D94DA00EC2FBF /* MonsterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E774BCF227D94DA00EC2FBF /* MonsterTableViewCell.swift */; };
 		5E774BD2227D9CEC00EC2FBF /* MonsterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E774BD1227D9CEC00EC2FBF /* MonsterTableViewController.swift */; };
 		5EA019892280A3B30017D28E /* MonsterInfoJSONthing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA019882280A3B30017D28E /* MonsterInfoJSONthing.swift */; };
@@ -57,6 +58,7 @@
 		5E1F7DDF227D8B8B00713C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E1F7DEB227D8C6600713C0B /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		5E41E34E228587D500C9FB6F /* DungeonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonViewController.swift; sourceTree = "<group>"; };
+		5E7099F1228C42FB002F3BA9 /* na_raw_cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = na_raw_cards.json; sourceTree = "<group>"; };
 		5E774BCF227D94DA00EC2FBF /* MonsterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterTableViewCell.swift; sourceTree = "<group>"; };
 		5E774BD1227D9CEC00EC2FBF /* MonsterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterTableViewController.swift; sourceTree = "<group>"; };
 		5EA019882280A3B30017D28E /* MonsterInfoJSONthing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterInfoJSONthing.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		5E1F7DBA227D8B8B00713C0B /* GuidePad */ = {
 			isa = PBXGroup;
 			children = (
+				5E7099F1228C42FB002F3BA9 /* na_raw_cards.json */,
 				5E1F7DBB227D8B8B00713C0B /* AppDelegate.swift */,
 				5EA019882280A3B30017D28E /* MonsterInfoJSONthing.swift */,
 				5E1F7DBD227D8B8B00713C0B /* MonsterViewController.swift */,
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E1F7DC8227D8B8B00713C0B /* LaunchScreen.storyboard in Resources */,
+				5E7099F2228C42FB002F3BA9 /* na_raw_cards.json in Resources */,
 				5E1F7DC5227D8B8B00713C0B /* Assets.xcassets in Resources */,
 				5E1F7DC3227D8B8B00713C0B /* Main.storyboard in Resources */,
 			);
