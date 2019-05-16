@@ -18,7 +18,10 @@ class DungeonViewController: UIViewController {
         for dungeons in DungeonView {
             dungeons.layer.cornerRadius = 10;
             dungeons.layer.masksToBounds = true
-        }
+        }        
+        print("pre jsonBOI execution")
+        jsonBOI()
+        print("jsonBOI executed")
         
         // Do any additional setup after loading the view.
     }
