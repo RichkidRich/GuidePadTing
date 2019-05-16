@@ -21,26 +21,6 @@ class MonsterViewController: UIViewController {
     
     var monster: Monster?
     
-    var arrayDict = NSMutableArray()
-    
-//    let file = "download_card_data"
-  
-//    func getPadData() {
-//        let path: NSString = Bundle.main.path(forResource: "download_card_data", ofType: "json")! as NSString
-//        let data: NSData = try! NSData(contentsOfFile: path as String, options: NSData.ReadingOptions.dataReadingMapped)
-//        
-//        startParsing(data: data)
-//    }
-//
-//    func startParsing(data: NSData) {
-//        let dict: NSDictionary!=(try! JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.mutableContainers)) as? NSDictionary
-//        for i in 0..<(dict.value(forKey: "card") as! NSArray).count {
-//            arrayDict.add((dict.value(forKey: "card") as! NSArray).object(at: i))
-//        }
-//        newTableView.reloadData()
-//    }
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // ASSIGNS MONSTER INFO PASSED FROM TABLE TO THIS VIEW
