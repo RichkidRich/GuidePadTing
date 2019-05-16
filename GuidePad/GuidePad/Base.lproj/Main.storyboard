@@ -755,6 +755,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zy9-lT-f4H">
                                                         <rect key="frame" x="0.0" y="0.0" width="173" height="186"/>
                                                         <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RagDra" translatesAutoresizingMaskIntoConstraints="NO" id="omK-Nj-afO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="173" height="186"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MP Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCX-KV-6EQ">
                                                                 <rect key="frame" x="8" y="8" width="88" height="27"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -779,8 +783,12 @@
                                                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <size key="shadowOffset" width="1" height="1"/>
                                                             </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="REM" translatesAutoresizingMaskIntoConstraints="NO" id="NZJ-CG-FUz">
+                                                                <rect key="frame" x="0.0" y="8" width="173" height="178"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.0" green="0.37955646701145901" blue="0.7876659650259068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.21747396685891582" green="0.56749887853604464" blue="0.81941168203098291" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -834,6 +842,8 @@
         <image name="GreenGoat" width="130" height="184"/>
         <image name="LitBlue" width="80" height="127"/>
         <image name="Megalodran" width="444" height="312"/>
+        <image name="REM" width="389" height="305"/>
+        <image name="RagDra" width="511" height="320"/>
         <image name="RedSlime" width="79" height="84"/>
         <image name="RockTexture" width="493" height="67"/>
         <image name="ScholarIsis" width="512" height="512"/>
