@@ -17,7 +17,7 @@ func jsonBOI() {
         var monsters: [NSManagedObject] = []
         let data = try Data(contentsOf: url, options: .mappedIfSafe)
         let json = try? JSON(data: data)
-        for names in 5000...5010 {
+        for names in 5000...5001 {
             let cardname = json!["card"][names][1]
             let cardnumber = json!["card"][names][0]
             
