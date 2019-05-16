@@ -7,20 +7,22 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 
-
-func readJSON() -> Any? {
-    var json: Any?
-    if let path = Bundle.main.path(forResource: "na_raw_cards", ofType: "json") {
-        do {
-            let fileURL = URL(fileURLWithPath: path)
-            let data = try Data(contentsOf: fileURL, options: .mappedIfSafe)
-            json = try? JSONSerialization.jsonObject(with: data)
-        } catch {
-            
+func jsonBOI() {
+    if let url = Bundle.main.url(forResource: "na_raw_cards", withExtension: "json") {
+    do {
+        let data = try Data(contentsOf: url, options: .mappedIfSafe)
+        let json = try? JSON(data: data)
+//            for names in json!["card"] {
+//                print(names)
+//            }
+            print(json!["card"][5002][1])
+    } catch {
+//         handle error
         }
+        
     }
-    return json
-}
 
+}
