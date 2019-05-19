@@ -348,10 +348,10 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d1v-7o-5pJ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="520"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FUs-jQ-wfT">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FUs-jQ-wfT" userLabel="HoeStack">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="256"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoC-jc-Caq">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoC-jc-Caq" userLabel="SpecialView">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RockTexture" translatesAutoresizingMaskIntoConstraints="NO" id="7wn-dV-5QU">
@@ -391,7 +391,7 @@
                                                             <constraint firstAttribute="bottom" secondItem="jsD-MV-PwD" secondAttribute="bottom" id="wHb-qH-i9r"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NaD-XZ-EDr">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NaD-XZ-EDr" userLabel="NormalView">
                                                         <rect key="frame" x="0.0" y="88" width="374" height="80"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RockTexture" translatesAutoresizingMaskIntoConstraints="NO" id="eFk-KC-tbU">
@@ -427,7 +427,7 @@
                                                             <constraint firstItem="WX1-t3-87l" firstAttribute="trailing" secondItem="VqC-HN-gmd" secondAttribute="trailing" id="vwF-d3-x2l"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkx-U8-qb3">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkx-U8-qb3" userLabel="TechnicalView">
                                                         <rect key="frame" x="0.0" y="176" width="374" height="80"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RockTexture" translatesAutoresizingMaskIntoConstraints="NO" id="gu8-tD-wUy">
@@ -471,10 +471,10 @@
                                                     <constraint firstAttribute="trailing" secondItem="LoC-jc-Caq" secondAttribute="trailing" id="hII-ac-nj5"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lY9-kO-r0S">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lY9-kO-r0S" userLabel="VertStack">
                                                 <rect key="frame" x="0.0" y="264" width="374" height="256"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIg-jD-OMS">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIg-jD-OMS" userLabel="MultiplayerView">
                                                         <rect key="frame" x="0.0" y="0.0" width="183" height="256"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RockTexture" translatesAutoresizingMaskIntoConstraints="NO" id="HqX-s0-cCA">
@@ -514,7 +514,7 @@
                                                             <constraint firstItem="VbF-bl-BLP" firstAttribute="trailing" secondItem="5Mo-pJ-UGP" secondAttribute="trailing" id="wdR-0p-Uf9"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6W-W3-lM4">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6W-W3-lM4" userLabel="RankingView">
                                                         <rect key="frame" x="191" y="0.0" width="183" height="256"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RockTexture" translatesAutoresizingMaskIntoConstraints="NO" id="FMs-tG-CZd">
@@ -615,10 +615,10 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Rew-0L-RwF">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="628"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-Ne-hlM">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-Ne-hlM" userLabel="Top Row">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="186"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmO-XA-r6b">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmO-XA-r6b" userLabel="GFEView">
                                                         <rect key="frame" x="0.0" y="0.0" width="183" height="186"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BaseCotton" translatesAutoresizingMaskIntoConstraints="NO" id="nwb-Yq-aFZ">
@@ -655,7 +655,7 @@
                                                             <constraint firstAttribute="bottom" secondItem="OAk-PK-XxX" secondAttribute="bottom" id="tXC-bP-51Z"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fw7-mh-bwx">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fw7-mh-bwx" userLabel="CollabView">
                                                         <rect key="frame" x="191" y="0.0" width="183" height="186"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArturiaPendragon" translatesAutoresizingMaskIntoConstraints="NO" id="bBC-UH-YnG">
@@ -702,10 +702,10 @@
                                                     <constraint firstItem="fw7-mh-bwx" firstAttribute="top" secondItem="Oxa-Ne-hlM" secondAttribute="top" id="wSJ-2A-OSr"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="unY-w8-gXt">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="unY-w8-gXt" userLabel="Middle Row">
                                                 <rect key="frame" x="0.0" y="192" width="374" height="244"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYD-SL-KLC">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYD-SL-KLC" userLabel="ClassicView">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="118"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Echidna" translatesAutoresizingMaskIntoConstraints="NO" id="uvB-bN-fgR">
@@ -755,7 +755,7 @@
                                                             <constraint firstItem="uvB-bN-fgR" firstAttribute="height" secondItem="LYD-SL-KLC" secondAttribute="height" id="ybD-xC-DgU"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glv-kd-SBY">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glv-kd-SBY" userLabel="EvoEnhanceView">
                                                         <rect key="frame" x="0.0" y="126" width="374" height="118"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuperSnowGlobe" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42e-He-fiB">
@@ -811,10 +811,10 @@
                                                     <constraint firstItem="glv-kd-SBY" firstAttribute="top" secondItem="LYD-SL-KLC" secondAttribute="bottom" constant="8" id="mIv-L2-gaR"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="V9x-bC-Unc">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="V9x-bC-Unc" userLabel="Bottom Row">
                                                 <rect key="frame" x="0.0" y="442" width="374" height="186"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zy9-lT-f4H">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zy9-lT-f4H" userLabel="MPShopView">
                                                         <rect key="frame" x="0.0" y="0.0" width="183" height="186"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RagDra" translatesAutoresizingMaskIntoConstraints="NO" id="omK-Nj-afO">
@@ -843,7 +843,7 @@
                                                             <constraint firstItem="omK-Nj-afO" firstAttribute="top" secondItem="Zy9-lT-f4H" secondAttribute="top" id="wsN-Av-bFl"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZZ-28-f4z">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZZ-28-f4z" userLabel="REMView">
                                                         <rect key="frame" x="191" y="0.0" width="183" height="186"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="REM" translatesAutoresizingMaskIntoConstraints="NO" id="NZJ-CG-FUz">
