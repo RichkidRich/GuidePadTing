@@ -16,6 +16,7 @@ class MonsterTableViewCell: UITableViewCell {
     @IBOutlet var numberLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var levelLabel: UILabel!
+    @IBOutlet weak var starLabel: UILabel!
     
 
     override func awakeFromNib() {
