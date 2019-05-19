@@ -11,6 +11,10 @@ class MonsterBookViewController: UIViewController {
     
     @IBOutlet var MonsterCategories: [UIView]!
     
+    @IBAction func GFEButton(_ sender: UIButton) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         for categories in MonsterCategories {

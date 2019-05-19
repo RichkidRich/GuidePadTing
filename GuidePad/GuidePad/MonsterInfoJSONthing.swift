@@ -14,7 +14,7 @@ import CoreData
 func jsonBOI() {
     if let url = Bundle.main.url(forResource: "na_raw_cards", withExtension: "json") {
     do {
-        var monsters: [NSManagedObject] = []
+//        var monsters: [NSManagedObject] = []
         let data = try Data(contentsOf: url, options: .mappedIfSafe)
         let json = try? JSON(data: data)
         for names in 5000...5001 {
