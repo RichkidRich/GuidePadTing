@@ -23,9 +23,10 @@ class Monster {
 //    var atk: Int
 //    var rcv: Int
     var maxlvl: Int
+    var rarity: Int
     
     
-    init?( number: Int, name: String, maxlvl: Int, attribute: Int, subattribute: Int) {
+    init?( number: Int, name: String, maxlvl: Int, attribute: Int, subattribute: Int, rarity: Int) {
 
         guard !name.isEmpty else {
             return nil
@@ -42,5 +43,6 @@ class Monster {
 //        self.atk = atk
 //        self.rcv = rcv
         self.maxlvl = maxlvl
+        self.rarity = rarity
     }
 }

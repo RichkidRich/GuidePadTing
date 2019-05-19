@@ -87,7 +87,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="002-aZ-tTe">
-                                            <rect key="frame" x="124" y="11" width="270" height="21"/>
+                                            <rect key="frame" x="124" y="11" width="111" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -112,19 +112,28 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stars" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tr-Mz-Q90" userLabel="Stars">
+                                            <rect key="frame" x="243" y="11" width="151" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="0tr-Mz-Q90" firstAttribute="baseline" secondItem="002-aZ-tTe" secondAttribute="baseline" id="AYt-NX-57V"/>
                                         <constraint firstItem="SW9-0f-1rg" firstAttribute="leading" secondItem="G1u-AT-KSQ" secondAttribute="trailing" constant="8" id="KTb-4x-b7i"/>
                                         <constraint firstItem="G1u-AT-KSQ" firstAttribute="top" secondItem="IBT-rP-OkQ" secondAttribute="top" constant="6" id="SwM-Cb-mGd"/>
                                         <constraint firstItem="Dlq-ph-qHt" firstAttribute="leading" secondItem="G1u-AT-KSQ" secondAttribute="trailing" constant="8" id="V4h-wz-7tG"/>
                                         <constraint firstItem="Dlq-ph-qHt" firstAttribute="top" secondItem="SW9-0f-1rg" secondAttribute="bottom" constant="13" id="bbt-if-acr"/>
                                         <constraint firstItem="SW9-0f-1rg" firstAttribute="width" secondItem="Dlq-ph-qHt" secondAttribute="width" id="cZV-yx-gWR"/>
+                                        <constraint firstItem="0tr-Mz-Q90" firstAttribute="trailing" secondItem="SW9-0f-1rg" secondAttribute="trailing" id="dRo-h0-5M9"/>
                                         <constraint firstItem="G1u-AT-KSQ" firstAttribute="leading" secondItem="IBT-rP-OkQ" secondAttribute="leading" constant="20" id="eqh-Rv-X6k"/>
                                         <constraint firstAttribute="trailing" secondItem="Dlq-ph-qHt" secondAttribute="trailing" constant="20" id="hcn-I2-UH8"/>
                                         <constraint firstAttribute="bottom" secondItem="G1u-AT-KSQ" secondAttribute="bottom" constant="7.5" id="kak-1z-Qyt"/>
-                                        <constraint firstAttribute="trailing" secondItem="002-aZ-tTe" secondAttribute="trailing" constant="20" id="n0M-aw-25N"/>
+                                        <constraint firstItem="0tr-Mz-Q90" firstAttribute="leading" secondItem="002-aZ-tTe" secondAttribute="trailing" constant="8" symbolic="YES" id="mD2-yp-StD"/>
+                                        <constraint firstAttribute="trailing" secondItem="002-aZ-tTe" secondAttribute="trailing" constant="179" id="n0M-aw-25N"/>
                                         <constraint firstItem="002-aZ-tTe" firstAttribute="leading" secondItem="G1u-AT-KSQ" secondAttribute="trailing" constant="8" id="oSr-2h-Y9X"/>
-                                        <constraint firstItem="002-aZ-tTe" firstAttribute="width" secondItem="SW9-0f-1rg" secondAttribute="width" id="qE8-dY-VRv"/>
+                                        <constraint firstItem="002-aZ-tTe" firstAttribute="width" secondItem="SW9-0f-1rg" secondAttribute="width" constant="-159" id="qE8-dY-VRv"/>
                                         <constraint firstItem="SW9-0f-1rg" firstAttribute="top" secondItem="002-aZ-tTe" secondAttribute="bottom" constant="12" id="upB-m9-Sn2"/>
                                         <constraint firstItem="002-aZ-tTe" firstAttribute="top" secondItem="IBT-rP-OkQ" secondAttribute="top" constant="11" id="vOh-Bd-ZBC"/>
                                         <constraint firstAttribute="trailing" secondItem="SW9-0f-1rg" secondAttribute="trailing" constant="20" id="w0T-Jh-aZT"/>
@@ -134,6 +143,7 @@
                                     <outlet property="levelLabel" destination="Dlq-ph-qHt" id="k4d-PP-Kmq"/>
                                     <outlet property="nameLabel" destination="SW9-0f-1rg" id="jut-Rd-oIf"/>
                                     <outlet property="numberLabel" destination="002-aZ-tTe" id="jXH-pg-3xF"/>
+                                    <outlet property="starLabel" destination="0tr-Mz-Q90" id="lmV-TO-5Xd"/>
                                     <segue destination="9pv-A4-QxB" kind="show" identifier="ShowDetails" id="Gkz-xk-ZAU">
                                         <segue key="commit" inheritsFrom="parent" id="FkT-JG-mCK"/>
                                         <segue key="preview" inheritsFrom="commit" id="y0A-i0-nC3"/>
@@ -150,7 +160,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6X-2G-Uox" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4312" y="797"/>
+            <point key="canvasLocation" x="4311.594202898551" y="796.875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xxq-vq-RVp">
@@ -223,10 +233,10 @@
             </objects>
             <point key="canvasLocation" x="2539.130434782609" y="1015.8482142857142"/>
         </scene>
-        <!--Dungeon Table-->
+        <!--Dungeon Collection-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController title="Dungeon Table" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dungeon Table" id="8rJ-Kc-sve" userLabel="Dungeon Collection" customClass="SecondViewController" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -351,6 +361,9 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="tpp-sO-dJa" kind="show" id="GGw-VC-Knx"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.69612193109999998" green="0.39276885989999999" blue="0.19740685820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -581,6 +594,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyb-6J-0im" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3500.0000000000005" y="354.91071428571428"/>
+        </scene>
+        <!--Dungeon Table-->
+        <scene sceneID="0ba-bA-pRF">
+            <objects>
+                <tableViewController id="tpp-sO-dJa" userLabel="Dungeon Table" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ov9-Zj-OA2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="612"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="llx-L5-AMM">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="llx-L5-AMM" id="I02-wm-OoK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tpp-sO-dJa" id="jzR-lh-9HS"/>
+                            <outlet property="delegate" destination="tpp-sO-dJa" id="c2p-SU-Grh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWF-KN-PM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4325" y="244"/>
         </scene>
         <!--Monster Book First Page collection-->
         <scene sceneID="7BE-hY-2QW">
