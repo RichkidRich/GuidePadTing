@@ -27,7 +27,7 @@
                                             <constraint firstAttribute="height" constant="2032" id="vGD-q4-Eiw"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="LZc-D5-1Ca" kind="embed" id="Una-2E-DL3"/>
+                                            <segue destination="LZc-D5-1Ca" kind="embed" identifier="seg" id="Una-2E-DL3"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -938,7 +938,7 @@
         <scene sceneID="Ta8-ha-YUd">
             <objects>
                 <viewController id="1Z6-lJ-9bU" customClass="CollabViewController" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="37q-pF-vPf">
+                    <view key="view" contentMode="scaleToFill" id="37q-pF-vPf">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="558"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1516,10 +1516,10 @@
             </objects>
             <point key="canvasLocation" x="1628.985507246377" y="354.91071428571428"/>
         </scene>
-        <!--Monster View Controller-->
+        <!--Monster Page Controller-->
         <scene sceneID="dCZ-PY-6qm">
             <objects>
-                <viewController id="LZc-D5-1Ca" customClass="MonsterViewController" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LZc-D5-1Ca" customClass="MonsterPageController" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JV5-oE-pWp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="2032"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2017,10 +2017,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NuJ-2V-d9z"/>
                     </view>
+                    <connections>
+                        <outlet property="monsterImage" destination="875-gO-B5Y" id="NWb-Kw-HgZ"/>
+                        <outlet property="monsterJPName" destination="6rh-m3-1qR" id="Rm1-4L-9DU"/>
+                        <outlet property="monsterNAName" destination="5fR-Vo-7dR" id="ell-ei-mQR"/>
+                        <outlet property="monsterNumber" destination="i3G-q7-ttN" id="Nkr-dR-J3B"/>
+                        <outlet property="monsterPortrait" destination="49g-Ph-gRB" id="KlS-A0-jHC"/>
+                        <outlet property="monsterRarity" destination="CAg-kd-oqH" id="YGd-C3-U98"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZh-jx-jfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6207" y="1098"/>
+            <point key="canvasLocation" x="6205.7971014492759" y="1097.5446428571429"/>
         </scene>
         <!--StatGraph-->
         <scene sceneID="cKu-zI-YOg">
@@ -2035,7 +2043,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="it6-yh-Hpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6562.3188405797109" y="665.95982142857144"/>
+            <point key="canvasLocation" x="6726" y="701"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DU2-lv-90U">
