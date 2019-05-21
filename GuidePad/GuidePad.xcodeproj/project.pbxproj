@@ -25,6 +25,7 @@
 		5EC6AA55228C79BD00CEAB9A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC6AA50228C731400CEAB9A /* SwiftyJSON.framework */; };
 		5EDFEF4B228DB3370064E1EF /* MonsterBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDFEF4A228DB3370064E1EF /* MonsterBookViewController.swift */; };
 		5EE2C927228FF53800E5C737 /* CollabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE2C926228FF53800E5C737 /* CollabViewController.swift */; };
+		D20BD3582293ECE00060D6D9 /* StatGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BD3572293ECE00060D6D9 /* StatGraph.swift */; };
 		D2B2619B2285335D00611412 /* GuidePadMonsterDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2B261992285335D00611412 /* GuidePadMonsterDB.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		5EC6AA50228C731400CEAB9A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = GuidePad/Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		5EDFEF4A228DB3370064E1EF /* MonsterBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterBookViewController.swift; sourceTree = "<group>"; };
 		5EE2C926228FF53800E5C737 /* CollabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabViewController.swift; sourceTree = "<group>"; };
+		D20BD3572293ECE00060D6D9 /* StatGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatGraph.swift; sourceTree = "<group>"; };
 		D2B2619A2285335D00611412 /* GuidePadMonsterDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GuidePadMonsterDB.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				5EDFEF4A228DB3370064E1EF /* MonsterBookViewController.swift */,
 				D2B261992285335D00611412 /* GuidePadMonsterDB.xcdatamodeld */,
 				5E1F7DC1227D8B8B00713C0B /* Main.storyboard */,
+				D20BD3572293ECE00060D6D9 /* StatGraph.swift */,
 				5E1F7DBF227D8B8B00713C0B /* SecondViewController.swift */,
 				5E774BD1227D9CEC00EC2FBF /* MonsterTableViewController.swift */,
 				5E1F7DEB227D8C6600713C0B /* Monster.swift */,
@@ -328,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20BD3582293ECE00060D6D9 /* StatGraph.swift in Sources */,
 				5EDFEF4B228DB3370064E1EF /* MonsterBookViewController.swift in Sources */,
 				5EA019892280A3B30017D28E /* MonsterInfoJSONthing.swift in Sources */,
 				5E41E34F228587D500C9FB6F /* DungeonViewController.swift in Sources */,
