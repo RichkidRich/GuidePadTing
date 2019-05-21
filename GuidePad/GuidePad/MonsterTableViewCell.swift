@@ -15,8 +15,9 @@ class MonsterTableViewCell: UITableViewCell {
     
     @IBOutlet var numberLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var levelLabel: UILabel!
+    @IBOutlet var jpNameLabel: UILabel!
     @IBOutlet weak var starLabel: UILabel!
+    @IBOutlet var portraitImage: UIImageView!
     
 
     override func awakeFromNib() {
