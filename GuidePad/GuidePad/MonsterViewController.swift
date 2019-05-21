@@ -14,10 +14,10 @@ class MonsterViewController: UIViewController {
 
     //THE 4 LINES BELOW CONNECT THE CODE TO THE UI ELEMENTS IN MAIN.STORYBOARD
     
-    @IBOutlet var monsterImageView: UIImageView!
-    @IBOutlet var monsterNumberLabel: UILabel!
-    @IBOutlet var monsterNameLabel: UILabel!
-    @IBOutlet var monsterMaxLvlLabel: UILabel!
+//    @IBOutlet var monsterImageView: UIImageView!
+//    @IBOutlet var monsterNumberLabel: UILabel!
+//    @IBOutlet var monsterNameLabel: UILabel!
+//    @IBOutlet var monsterMaxLvlLabel: UILabel!
     
     var monster: Monster?
     
@@ -25,8 +25,8 @@ class MonsterViewController: UIViewController {
         super.viewDidLoad()
         // ASSIGNS MONSTER INFO PASSED FROM TABLE TO THIS VIEW
         if let monster = monster {
-            navigationItem.title = monster.name
-            monsterNameLabel.text = monster.name
+            //navigationItem.title = monster.name
+            //monsterNameLabel.text = monster.name
 //            monsterNumberLabel.text = String(monster.number)
 //            monsterMaxLvlLabel.text = String(monster.maxlvl)
 //            monsterImageView.image = UIImage(named: "MONS_0"+String(monster.number))
