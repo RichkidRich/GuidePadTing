@@ -32,8 +32,8 @@
                                     </containerView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="OI6-7x-oui" secondAttribute="bottom" id="DUI-dh-mua"/>
                                     <constraint firstAttribute="trailing" secondItem="OI6-7x-oui" secondAttribute="trailing" id="NUj-iY-Y28"/>
-                                    <constraint firstAttribute="bottom" secondItem="OI6-7x-oui" secondAttribute="bottom" constant="-1415" id="TAU-1e-SGg"/>
                                     <constraint firstItem="OI6-7x-oui" firstAttribute="leading" secondItem="gqL-CN-jlx" secondAttribute="leading" id="WcQ-IK-r9H"/>
                                     <constraint firstItem="OI6-7x-oui" firstAttribute="top" secondItem="gqL-CN-jlx" secondAttribute="top" id="sg4-xO-BU1"/>
                                     <constraint firstItem="OI6-7x-oui" firstAttribute="width" secondItem="gqL-CN-jlx" secondAttribute="width" id="yjg-zZ-AdG"/>
@@ -943,7 +943,7 @@
         <scene sceneID="Ta8-ha-YUd">
             <objects>
                 <viewController id="1Z6-lJ-9bU" customClass="CollabViewController" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="37q-pF-vPf">
+                    <view key="view" contentMode="scaleToFill" id="37q-pF-vPf">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="558"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1967,6 +1967,7 @@
                             <constraint firstItem="lxg-FC-CHU" firstAttribute="top" secondItem="RhS-d5-IK6" secondAttribute="bottom" constant="8" symbolic="YES" id="zZR-rg-0N2"/>
                             <constraint firstItem="Cqa-nO-Xa7" firstAttribute="leading" secondItem="uKT-38-waV" secondAttribute="trailing" constant="8" symbolic="YES" id="zg2-pj-wq7"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="NuJ-2V-d9z"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZh-jx-jfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1981,10 +1982,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="397" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fFL-3m-38C"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="it6-yh-Hpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="6599" y="833"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DU2-lv-90U">
@@ -1994,6 +1997,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="397" height="237"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IBW-U3-obD"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLb-OI-HuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2008,6 +2012,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="396" height="356"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zDS-MV-LUp"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtw-ey-kbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2022,6 +2027,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="397" height="224"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MXP-I0-nwz"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWP-3B-eE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
