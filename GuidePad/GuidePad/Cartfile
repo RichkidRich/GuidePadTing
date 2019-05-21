@@ -1,1 +1,2 @@
 github "SwiftyJSON/SwiftyJSON" >= 2.1.2
+github "i-schuetz/SwiftCharts" ~> 0.6.5

@@ -21,6 +21,7 @@
 		5E774BD0227D94DA00EC2FBF /* MonsterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E774BCF227D94DA00EC2FBF /* MonsterTableViewCell.swift */; };
 		5E774BD2227D9CEC00EC2FBF /* MonsterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E774BD1227D9CEC00EC2FBF /* MonsterTableViewController.swift */; };
 		5EA019892280A3B30017D28E /* MonsterInfoJSONthing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA019882280A3B30017D28E /* MonsterInfoJSONthing.swift */; };
+		5EAE54C62293C9F700B93D26 /* SwiftCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAE54C52293C9F700B93D26 /* SwiftCharts.framework */; };
 		5EC6AA55228C79BD00CEAB9A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC6AA50228C731400CEAB9A /* SwiftyJSON.framework */; };
 		5EDFEF4B228DB3370064E1EF /* MonsterBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDFEF4A228DB3370064E1EF /* MonsterBookViewController.swift */; };
 		5EE2C927228FF53800E5C737 /* CollabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE2C926228FF53800E5C737 /* CollabViewController.swift */; };
@@ -65,6 +66,7 @@
 		5E774BCF227D94DA00EC2FBF /* MonsterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterTableViewCell.swift; sourceTree = "<group>"; };
 		5E774BD1227D9CEC00EC2FBF /* MonsterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterTableViewController.swift; sourceTree = "<group>"; };
 		5EA019882280A3B30017D28E /* MonsterInfoJSONthing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterInfoJSONthing.swift; sourceTree = "<group>"; };
+		5EAE54C52293C9F700B93D26 /* SwiftCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCharts.framework; path = GuidePad/Carthage/Build/iOS/SwiftCharts.framework; sourceTree = "<group>"; };
 		5EC6AA50228C731400CEAB9A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = GuidePad/Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		5EDFEF4A228DB3370064E1EF /* MonsterBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterBookViewController.swift; sourceTree = "<group>"; };
 		5EE2C926228FF53800E5C737 /* CollabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC6AA55228C79BD00CEAB9A /* SwiftyJSON.framework in Frameworks */,
+				5EAE54C62293C9F700B93D26 /* SwiftCharts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +165,7 @@
 		5EC6AA4F228C731400CEAB9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EAE54C52293C9F700B93D26 /* SwiftCharts.framework */,
 				5EC6AA50228C731400CEAB9A /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
@@ -305,11 +309,13 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/GuidePad/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/GuidePad/Carthage/Build/iOS/SwiftCharts.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftCharts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
