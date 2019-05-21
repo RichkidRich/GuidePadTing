@@ -13,14 +13,7 @@ class MonsterViewController: UIViewController {
     //MARK: Properties
 
     //THE 4 LINES BELOW CONNECT THE CODE TO THE UI ELEMENTS IN MAIN.STORYBOARD
-    
-    @IBOutlet var monsterImageView: UIImageView!
-    @IBOutlet var monsterNumberLabel: UILabel!
-    @IBOutlet var monsterNameLabel: UILabel!
-    @IBOutlet var monsterJPNameLabel: UILabel!
-    @IBOutlet var monsterStarsLabel: UILabel!
-    @IBOutlet var monsterPortraitImage: UIImageView!
-    
+
     var monster: Monster?
     
     override func viewDidLoad() {
@@ -28,15 +21,13 @@ class MonsterViewController: UIViewController {
         // ASSIGNS MONSTER INFO PASSED FROM TABLE TO THIS VIEW
         if let monster = monster {
             navigationItem.title = monster.name
-//            monsterNameLabel.text = monster.name
-//            monsterNumberLabel.text = String(monster.number)
-//            monsterStarsLabel.text = String(monster.rarity) + "★"
-//            monsterPortraitImage.image = UIImage(named: String(monster.number))
-////            monsterMaxLvlLabel.text = String(monster.maxlvl)
-//            monsterImageView.image = UIImage(named: "MONS_0"+String(monster.number))
-        } else {
-            print("lmao get fucked")
-            return
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "seg") {
+            let sec = segue.destination as! MonsterPageController
+            sec.monster = monster
         }
     }
     

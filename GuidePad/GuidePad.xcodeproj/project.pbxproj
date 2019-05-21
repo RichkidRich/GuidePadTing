@@ -16,6 +16,7 @@
 		5E1F7DD3227D8B8B00713C0B /* GuidePadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1F7DD2227D8B8B00713C0B /* GuidePadTests.swift */; };
 		5E1F7DDE227D8B8B00713C0B /* GuidePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1F7DDD227D8B8B00713C0B /* GuidePadUITests.swift */; };
 		5E1F7DEC227D8C6600713C0B /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1F7DEB227D8C6600713C0B /* Monster.swift */; };
+		5E3140B822941B87002C0B9A /* MonsterPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3140B722941B87002C0B9A /* MonsterPageController.swift */; };
 		5E41E34F228587D500C9FB6F /* DungeonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41E34E228587D500C9FB6F /* DungeonViewController.swift */; };
 		5E7099F2228C42FB002F3BA9 /* na_raw_cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E7099F1228C42FB002F3BA9 /* na_raw_cards.json */; };
 		5E774BD0227D94DA00EC2FBF /* MonsterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E774BCF227D94DA00EC2FBF /* MonsterTableViewCell.swift */; };
@@ -62,6 +63,7 @@
 		5E1F7DDD227D8B8B00713C0B /* GuidePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePadUITests.swift; sourceTree = "<group>"; };
 		5E1F7DDF227D8B8B00713C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E1F7DEB227D8C6600713C0B /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		5E3140B722941B87002C0B9A /* MonsterPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterPageController.swift; sourceTree = "<group>"; };
 		5E41E34E228587D500C9FB6F /* DungeonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonViewController.swift; sourceTree = "<group>"; };
 		5E7099F1228C42FB002F3BA9 /* na_raw_cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = na_raw_cards.json; sourceTree = "<group>"; };
 		5E774BCF227D94DA00EC2FBF /* MonsterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterTableViewCell.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				5EDFEF4A228DB3370064E1EF /* MonsterBookViewController.swift */,
 				D2B261992285335D00611412 /* GuidePadMonsterDB.xcdatamodeld */,
 				5E1F7DC1227D8B8B00713C0B /* Main.storyboard */,
+				5E3140B722941B87002C0B9A /* MonsterPageController.swift */,
 				D20BD3572293ECE00060D6D9 /* StatGraph.swift */,
 				5E1F7DBF227D8B8B00713C0B /* SecondViewController.swift */,
 				5E774BD1227D9CEC00EC2FBF /* MonsterTableViewController.swift */,
@@ -338,6 +341,7 @@
 				5EE2C927228FF53800E5C737 /* CollabViewController.swift in Sources */,
 				5E1F7DEC227D8C6600713C0B /* Monster.swift in Sources */,
 				5E774BD0227D94DA00EC2FBF /* MonsterTableViewCell.swift in Sources */,
+				5E3140B822941B87002C0B9A /* MonsterPageController.swift in Sources */,
 				5E774BD2227D9CEC00EC2FBF /* MonsterTableViewController.swift in Sources */,
 				5E1F7DC0227D8B8B00713C0B /* SecondViewController.swift in Sources */,
 				5E1F7DBC227D8B8B00713C0B /* AppDelegate.swift in Sources */,
