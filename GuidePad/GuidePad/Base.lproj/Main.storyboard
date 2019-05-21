@@ -15,7 +15,7 @@
             <objects>
                 <viewController title="Monster Page" id="9pv-A4-QxB" customClass="MonsterViewController" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="617"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUh-sP-Ba3">
@@ -75,7 +75,7 @@
             <objects>
                 <tableViewController title="Monster Table" id="8jG-5Z-uVZ" customClass="MonsterTableViewController" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="X1e-H7-nNG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="617"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -162,7 +162,7 @@
             </objects>
             <point key="canvasLocation" x="4311.594202898551" y="796.875"/>
         </scene>
-        <!--View Controller-->
+        <!--Monster Book-->
         <scene sceneID="xxq-vq-RVp">
             <objects>
                 <viewController id="2ew-bj-p8c" sceneMemberID="viewController">
@@ -170,52 +170,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Monsters by Name or ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNp-M4-gqi">
-                                <rect key="frame" x="16" y="136" width="374" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <searchBar contentMode="redraw" misplaced="YES" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-2w-MVH">
-                                <rect key="frame" x="12" y="153" width="393" height="56"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuK-3Z-p82">
+                                <rect key="frame" x="0.0" y="196" width="414" height="617"/>
+                                <connections>
+                                    <segue destination="pKx-Ks-9ha" kind="embed" id="qEB-3A-yAR"/>
+                                </connections>
+                            </containerView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-2w-MVH">
+                                <rect key="frame" x="11" y="140" width="393" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="2ew-bj-p8c" id="ynB-zc-1bj"/>
                                 </connections>
                             </searchBar>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuK-3Z-p82">
-                                <rect key="frame" x="0.0" y="209" width="414" height="604"/>
-                                <connections>
-                                    <segue destination="pKx-Ks-9ha" kind="embed" id="qEB-3A-yAR"/>
-                                </connections>
-                            </containerView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Monster Book" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cjc-f2-M8H">
-                                <rect key="frame" x="16" y="98" width="374" height="41"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Cjc-f2-M8H" firstAttribute="top" secondItem="Acq-Df-P3O" secondAttribute="top" constant="10" id="7Dy-aV-7E4"/>
-                            <constraint firstItem="Acq-Df-P3O" firstAttribute="trailing" secondItem="Cjc-f2-M8H" secondAttribute="trailing" constant="24" id="FQD-ME-v0B"/>
-                            <constraint firstItem="Acq-Df-P3O" firstAttribute="trailing" secondItem="kHh-2w-MVH" secondAttribute="trailing" constant="20" id="J3K-gs-bnv"/>
+                            <constraint firstItem="kHh-2w-MVH" firstAttribute="top" secondItem="Acq-Df-P3O" secondAttribute="top" id="2D9-3J-XFK"/>
+                            <constraint firstItem="VuK-3Z-p82" firstAttribute="top" secondItem="kHh-2w-MVH" secondAttribute="bottom" id="BTp-To-nmV"/>
+                            <constraint firstItem="Acq-Df-P3O" firstAttribute="trailing" secondItem="kHh-2w-MVH" secondAttribute="trailing" constant="10" id="J3K-gs-bnv"/>
                             <constraint firstItem="VuK-3Z-p82" firstAttribute="bottom" secondItem="Acq-Df-P3O" secondAttribute="bottom" id="J5p-1f-qdY"/>
-                            <constraint firstItem="VuK-3Z-p82" firstAttribute="top" secondItem="oNp-M4-gqi" secondAttribute="bottom" constant="56" id="VLY-S1-LiQ"/>
-                            <constraint firstItem="kHh-2w-MVH" firstAttribute="top" secondItem="oNp-M4-gqi" secondAttribute="bottom" id="YND-KU-hnN"/>
                             <constraint firstItem="VuK-3Z-p82" firstAttribute="leading" secondItem="Acq-Df-P3O" secondAttribute="leading" id="gah-QD-pM1"/>
-                            <constraint firstItem="Acq-Df-P3O" firstAttribute="trailing" secondItem="oNp-M4-gqi" secondAttribute="trailing" constant="24" id="k1H-QG-XEB"/>
-                            <constraint firstItem="oNp-M4-gqi" firstAttribute="leading" secondItem="Acq-Df-P3O" secondAttribute="leading" constant="16" id="new-e9-ydh"/>
-                            <constraint firstItem="oNp-M4-gqi" firstAttribute="top" secondItem="Cjc-f2-M8H" secondAttribute="bottom" constant="-3" id="sbH-c8-7bN"/>
-                            <constraint firstItem="Cjc-f2-M8H" firstAttribute="leading" secondItem="Acq-Df-P3O" secondAttribute="leading" constant="16" id="tRR-eL-xDd"/>
                             <constraint firstItem="Acq-Df-P3O" firstAttribute="trailing" secondItem="VuK-3Z-p82" secondAttribute="trailing" id="ul6-TC-5Mh"/>
-                            <constraint firstItem="kHh-2w-MVH" firstAttribute="leading" secondItem="Acq-Df-P3O" secondAttribute="leading" constant="12" id="uyr-24-ENI"/>
+                            <constraint firstItem="kHh-2w-MVH" firstAttribute="leading" secondItem="Acq-Df-P3O" secondAttribute="leading" constant="11" id="uyr-24-ENI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Acq-Df-P3O"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1m9-wV-XJJ"/>
+                    <navigationItem key="navigationItem" title="Monster Book" id="1m9-wV-XJJ"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="9yU-9M-YOW" id="ke8-l9-3O2"/>
                     </connections>
@@ -628,11 +609,11 @@
             <objects>
                 <viewController id="pKx-Ks-9ha" userLabel="Monster Book First Page collection" customClass="MonsterBookViewController" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xUS-Lm-mt6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="617"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1b9-4l-OgS">
-                                <rect key="frame" x="20" y="0.0" width="374" height="604"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="617"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Rew-0L-RwF">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="628"/>
@@ -755,6 +736,9 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="8jG-5Z-uVZ" kind="show" id="Qf3-V5-6GK"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.69612193109999998" green="0.39276885989999999" blue="0.19740685820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -799,6 +783,9 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="8jG-5Z-uVZ" kind="show" id="27E-UK-YVh"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.69612193109999998" green="0.39276885989999999" blue="0.19740685820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -849,6 +836,9 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="8jG-5Z-uVZ" kind="show" id="WEs-ny-IqM"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.23975691199999999" green="0.58852106329999998" blue="0.33982595799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -878,6 +868,9 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="8jG-5Z-uVZ" kind="show" id="0Ib-kX-2QW"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.21747396685891582" green="0.56749887853604464" blue="0.81941168203098291" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -950,7 +943,7 @@
             <objects>
                 <viewController id="Pkf-td-jKM" userLabel="Collab collection" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Vb-Wc-KH2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="617"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YRM-g6-ly8">
@@ -1524,8 +1517,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M2k-T4-mC6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Monsters" image="first" id="rjh-hx-3BS"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tn9-K6-tTP">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Tn9-K6-tTP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1578,6 +1571,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="WEs-ny-IqM"/>
         <segue reference="Gkz-xk-ZAU"/>
     </inferredMetricsTieBreakers>
 </document>
