@@ -67,11 +67,12 @@ class MonsterTableViewController: UITableViewController {
 
         cell.nameLabel.text = monster.name
         cell.starLabel.text = String(monster.rarity)+" ★"
+        cell.portraitImage.image = UIImage(named: String(monster.number))
         cell.numberLabel.text = "No. "+String(monster.number)
         if (monster.rarity == 6){
-            cell.levelLabel.text = "正義の味方を志す者・衛宮士郎"
+            cell.jpNameLabel.text = "正義の味方を志す者・衛宮士郎"
         }else{
-            cell.levelLabel.text = String(monster.maxlvl)
+            cell.jpNameLabel.text = String(monster.maxlvl)
         }
 
         return cell
