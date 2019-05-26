@@ -17,11 +17,28 @@ class statGraph : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let screenRect = UIScreen.main.bounds
+        let screenWidth = screenRect.size.width
+        
+        let HPLabel = UILabel()
+        HPLabel.frame = CGRect(x: (screenWidth/6)-11.75, y: 55, width: 23, height: 21)
+        HPLabel.text = "HP"
+        let ATKLabel = UILabel()
+        ATKLabel.frame = CGRect(x: (screenWidth/2)-15.5, y: 55, width: 31, height: 21)
+        ATKLabel.text = "ATK"
+        let RCVLabel = UILabel()
+        RCVLabel.frame = CGRect(x: (screenWidth*0.8375)-17, y:55, width: 34, height: 21)
+        RCVLabel.text = "RCV"
+        
+        self.view.addSubview(HPLabel)
+        self.view.addSubview(ATKLabel)
+        self.view.addSubview(RCVLabel)
+        
         var startAngle = 270*Double.pi/180
         
         //Draw Base Circles
         
-        let HPcirclePath = UIBezierPath(arcCenter: CGPoint(x: 66,y: 64), radius: CGFloat(50), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2), clockwise: true)
+        let HPcirclePath = UIBezierPath(arcCenter: CGPoint(x: (screenWidth/6),y: 64), radius: CGFloat(screenWidth/8), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2), clockwise: true)
         
         let HPshapeLayer = CAShapeLayer()
         HPshapeLayer.path = HPcirclePath.cgPath
@@ -35,7 +52,7 @@ class statGraph : UIViewController {
         
         view.layer.addSublayer(HPshapeLayer)
         
-        let ATKcirclePath = UIBezierPath(arcCenter: CGPoint(x: 195,y: 64), radius: CGFloat(50), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2), clockwise: true)
+        let ATKcirclePath = UIBezierPath(arcCenter: CGPoint(x: (screenWidth/2),y: 64), radius: CGFloat(screenWidth/8), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2), clockwise: true)
         
         let ATKshapeLayer = CAShapeLayer()
         ATKshapeLayer.path = ATKcirclePath.cgPath
@@ -49,7 +66,7 @@ class statGraph : UIViewController {
         
         view.layer.addSublayer(ATKshapeLayer)
         
-        let RCVcirclePath = UIBezierPath(arcCenter: CGPoint(x: 323,y: 64), radius: CGFloat(50), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2), clockwise: true)
+        let RCVcirclePath = UIBezierPath(arcCenter: CGPoint(x: (screenWidth*0.8375),y: 64), radius: CGFloat(screenWidth/8), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2), clockwise: true)
         
         let RCVshapeLayer = CAShapeLayer()
         RCVshapeLayer.path = RCVcirclePath.cgPath
@@ -65,7 +82,7 @@ class statGraph : UIViewController {
         
         //Draw Circle Filler
         
-        let HParcPath = UIBezierPath(arcCenter: CGPoint(x: 66,y: 64), radius: CGFloat(50), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2 * 0.7), clockwise: true)
+        let HParcPath = UIBezierPath(arcCenter: CGPoint(x: (screenWidth/6),y: 64), radius: CGFloat(screenWidth/8), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2 * 0.7), clockwise: true)
         
         let HParcShapeLayer = CAShapeLayer()
         HParcShapeLayer.path = HParcPath.cgPath
@@ -77,18 +94,18 @@ class statGraph : UIViewController {
         
         view.layer.addSublayer(HParcShapeLayer)
         
-        let ATKarcPath = UIBezierPath(arcCenter: CGPoint(x: 195,y: 64), radius: CGFloat(50), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2 * 0.7), clockwise: true)
+        let ATKarcPath = UIBezierPath(arcCenter: CGPoint(x: (screenWidth/2),y: 64), radius: CGFloat(screenWidth/8), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2 * 0.7), clockwise: true)
         
         let ATKarcShapeLayer = CAShapeLayer()
         ATKarcShapeLayer.path = ATKarcPath.cgPath
         
         ATKarcShapeLayer.fillColor = UIColor.clear.cgColor
-        ATKarcShapeLayer.strokeColor = UIColor(red:0.13, green:0.37, blue:0.71, alpha:1.0).cgColor
+        ATKarcShapeLayer.strokeColor = UIColor(red:0.21, green:0.6, blue:0.93, alpha:1.0).cgColor
         ATKarcShapeLayer.lineWidth = 9.0
         
         view.layer.addSublayer(ATKarcShapeLayer)
         
-        let RCVarcPath = UIBezierPath(arcCenter: CGPoint(x: 323,y: 64), radius: CGFloat(50), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2 * 0.7), clockwise: true)
+        let RCVarcPath = UIBezierPath(arcCenter: CGPoint(x: (screenWidth*0.8375),y: 64), radius: CGFloat(screenWidth/8), startAngle: CGFloat(startAngle), endAngle:CGFloat(startAngle + Double.pi * 2 * 0.7), clockwise: true)
         
         let RCVarcShapeLayer = CAShapeLayer()
         RCVarcShapeLayer.path = RCVarcPath.cgPath
