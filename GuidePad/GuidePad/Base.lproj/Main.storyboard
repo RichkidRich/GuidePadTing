@@ -350,6 +350,9 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="4lX-8A-AgR" kind="show" id="nsT-U4-ks0"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.80121946330000005" green="0.57469755410000001" blue="0.32034748790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -465,7 +468,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zeus Verse" translatesAutoresizingMaskIntoConstraints="NO" id="ASH-8m-hde">
-                                                                <rect key="frame" x="0.0" y="56" width="183" height="200"/>
+                                                                <rect key="frame" x="0.0" y="56" width="183.00000000000011" height="200"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="200" id="iLx-d4-tN0"/>
                                                                 </constraints>
@@ -569,6 +572,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWF-KN-PM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4325" y="244"/>
+        </scene>
+        <!--test-->
+        <scene sceneID="Wlj-Ld-sWe">
+            <objects>
+                <viewController id="4lX-8A-AgR" userLabel="test" customClass="jsonTest" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hCV-cd-VKG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="617"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3II-wq-RPO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTt-Ua-S3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5254" y="6"/>
         </scene>
         <!--Monster Book First Page collection-->
         <scene sceneID="7BE-hY-2QW">
@@ -676,19 +694,19 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="118"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Echidna" translatesAutoresizingMaskIntoConstraints="NO" id="uvB-bN-fgR">
-                                                                <rect key="frame" x="358" y="0.0" width="16" height="118"/>
+                                                                <rect key="frame" x="103" y="0.0" width="271" height="118"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="271" id="BOj-gl-6Sy"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigGreenCarbuncle" translatesAutoresizingMaskIntoConstraints="NO" id="t0E-Kq-dgX">
-                                                                <rect key="frame" x="361" y="0.0" width="126" height="118"/>
+                                                                <rect key="frame" x="106" y="0.0" width="126" height="118"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="126" id="nkG-Zf-WoO"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueSlime" translatesAutoresizingMaskIntoConstraints="NO" id="HRo-fc-tus">
-                                                                <rect key="frame" x="282" y="45" width="159" height="73"/>
+                                                                <rect key="frame" x="27" y="45" width="159" height="73"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="159" id="nEH-4E-Dfd"/>
                                                                 </constraints>
@@ -735,10 +753,10 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tamadra" translatesAutoresizingMaskIntoConstraints="NO" id="xOY-VT-Wre">
-                                                                <rect key="frame" x="292" y="30" width="16" height="88"/>
+                                                                <rect key="frame" x="164" y="30" width="144" height="88"/>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LitBlue" translatesAutoresizingMaskIntoConstraints="NO" id="uDI-dg-rfy">
-                                                                <rect key="frame" x="314" y="21" width="16" height="97"/>
+                                                                <rect key="frame" x="122" y="21" width="80" height="97"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y3-Qm-xgI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="118"/>
@@ -823,7 +841,7 @@
                                                         <rect key="frame" x="191" y="0.0" width="183" height="186"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="REM" translatesAutoresizingMaskIntoConstraints="NO" id="NZJ-CG-FUz">
-                                                                <rect key="frame" x="0.0" y="8" width="183" height="178"/>
+                                                                <rect key="frame" x="0.0" y="8" width="183.00000000000011" height="178"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUQ-Et-BKL">
                                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="186"/>
@@ -937,7 +955,7 @@
         <scene sceneID="Ta8-ha-YUd">
             <objects>
                 <viewController id="1Z6-lJ-9bU" customClass="CollabViewController" customModule="GuidePad" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="37q-pF-vPf">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="37q-pF-vPf">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="558"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1530,7 +1548,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amenominkanushi" translatesAutoresizingMaskIntoConstraints="NO" id="875-gO-B5Y" userLabel="FullMonster">
-                                <rect key="frame" x="0.0" y="64" width="414" height="200.5"/>
+                                <rect key="frame" x="0.0" y="64" width="414.00000000000011" height="200.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="875-gO-B5Y" secondAttribute="height" multiplier="413:200" id="dQG-uk-FxP"/>
                                 </constraints>
@@ -1966,6 +1984,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGe-WZ-VR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="7181" y="127"/>
         </scene>
     </scenes>
     <resources>
