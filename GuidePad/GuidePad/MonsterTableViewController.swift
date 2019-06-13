@@ -18,15 +18,15 @@ class MonsterTableViewController: UITableViewController {
     //MARK: Private Methods
     
     private func loadSampleMonsters() {
-        guard let monster1 = Monster(number: 5002, name: "Aspiring Hero of Justice, Shirou Emiya", maxlvl: 110, attribute: 1, subattribute: 3, rarity: 7) else {
+        guard let monster1 = Monster(number: 5002, name: "Aspiring Hero of Justice, Shirou Emiya", jpname: "正義の味方を志す者・衛宮士郎", attribute: 1, subattribute: 3, rarity: 7) else {
             fatalError("Unable to instantiate monster1")
         }
         
-        guard let monster2 = Monster(number: 5001, name: "Shirou Emiya", maxlvl: 99, attribute: 1, subattribute: 3, rarity: 6) else {
+        guard let monster2 = Monster(number: 5001, name: "Shirou Emiya", jpname: "衛宮士郎", attribute: 1, subattribute: 3, rarity: 6) else {
             fatalError("Unable to instantiate monster2")
         }
         
-        guard let monster3 = Monster(number: 4997, name: "Witch of the Freezing Fists, Cherun", maxlvl: 99, attribute: 1, subattribute: 2, rarity: 7) else {
+        guard let monster3 = Monster(number: 4997, name: "Witch of the Freezing Fists, Cherun", jpname: "氷拳の魔女・チェルン", attribute: 1, subattribute: 2, rarity: 7) else {
             fatalError("Unable to instantiate monster3")
         }
         
@@ -69,11 +69,7 @@ class MonsterTableViewController: UITableViewController {
         cell.starLabel.text = String(monster.rarity)+" ★"
         cell.portraitImage.image = UIImage(named: String(monster.number))
         cell.numberLabel.text = "No. "+String(monster.number)
-        if (monster.rarity == 6){
-            cell.jpNameLabel.text = "正義の味方を志す者・衛宮士郎"
-        }else{
-            cell.jpNameLabel.text = String(monster.maxlvl)
-        }
+        cell.jpNameLabel.text = String(monster.jpname)
 
         return cell
     }

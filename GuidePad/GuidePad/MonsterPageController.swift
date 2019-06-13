@@ -37,9 +37,9 @@ class MonsterPageController: UIViewController {
             navigationItem.title = monster.name
             monsterNAName.text = monster.name
             monsterNumber.text = "No. " + String(monster.number)
-            monsterRarity.text = String(monster.rarity) + "★"
+            monsterRarity.text = String(monster.rarity) + " ★"
             monsterPortrait.image = UIImage(named: String(monster.number))
-            monsterJPName.text = String(monster.maxlvl)
+            monsterJPName.text = String(monster.jpname)
             monsterImage.image = UIImage(named: "MONS_0"+String(monster.number))
         } else {
             print("lmao get fucked")
