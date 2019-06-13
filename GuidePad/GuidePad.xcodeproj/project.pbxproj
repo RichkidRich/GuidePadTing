@@ -27,6 +27,11 @@
 		5EDFEF4B228DB3370064E1EF /* MonsterBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDFEF4A228DB3370064E1EF /* MonsterBookViewController.swift */; };
 		5EE2C927228FF53800E5C737 /* CollabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE2C926228FF53800E5C737 /* CollabViewController.swift */; };
 		D20BD3582293ECE00060D6D9 /* StatGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BD3572293ECE00060D6D9 /* StatGraph.swift */; };
+		D29DDA3F22B23C1A00D48504 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29DDA3E22B23C1A00D48504 /* NetworkingService.swift */; };
+		D29DDA4122B23E0300D48504 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29DDA4022B23E0300D48504 /* PersistenceService.swift */; };
+		D29DDA4822B247A500D48504 /* Monsters+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29DDA4622B247A500D48504 /* Monsters+CoreDataClass.swift */; };
+		D29DDA4922B247A500D48504 /* Monsters+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29DDA4722B247A500D48504 /* Monsters+CoreDataProperties.swift */; };
+		D29DDA4B22B2490300D48504 /* jsonTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29DDA4A22B2490300D48504 /* jsonTestView.swift */; };
 		D2B2619B2285335D00611412 /* GuidePadMonsterDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2B261992285335D00611412 /* GuidePadMonsterDB.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +79,11 @@
 		5EDFEF4A228DB3370064E1EF /* MonsterBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterBookViewController.swift; sourceTree = "<group>"; };
 		5EE2C926228FF53800E5C737 /* CollabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabViewController.swift; sourceTree = "<group>"; };
 		D20BD3572293ECE00060D6D9 /* StatGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatGraph.swift; sourceTree = "<group>"; };
+		D29DDA3E22B23C1A00D48504 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		D29DDA4022B23E0300D48504 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		D29DDA4622B247A500D48504 /* Monsters+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Monsters+CoreDataClass.swift"; path = "GuidePad/Monsters+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D29DDA4722B247A500D48504 /* Monsters+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Monsters+CoreDataProperties.swift"; path = "GuidePad/Monsters+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D29DDA4A22B2490300D48504 /* jsonTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonTestView.swift; sourceTree = "<group>"; };
 		D2B2619A2285335D00611412 /* GuidePadMonsterDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GuidePadMonsterDB.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +117,8 @@
 		5E1F7DAF227D8B8B00713C0B = {
 			isa = PBXGroup;
 			children = (
+				D29DDA4622B247A500D48504 /* Monsters+CoreDataClass.swift */,
+				D29DDA4722B247A500D48504 /* Monsters+CoreDataProperties.swift */,
 				5E1F7DBA227D8B8B00713C0B /* GuidePad */,
 				5E1F7DD1227D8B8B00713C0B /* GuidePadTests */,
 				5E1F7DDC227D8B8B00713C0B /* GuidePadUITests */,
@@ -128,8 +140,10 @@
 		5E1F7DBA227D8B8B00713C0B /* GuidePad */ = {
 			isa = PBXGroup;
 			children = (
+				D29DDA3E22B23C1A00D48504 /* NetworkingService.swift */,
 				5E7099F1228C42FB002F3BA9 /* na_raw_cards.json */,
 				5E1F7DBB227D8B8B00713C0B /* AppDelegate.swift */,
+				D29DDA4022B23E0300D48504 /* PersistenceService.swift */,
 				5EA019882280A3B30017D28E /* MonsterInfoJSONthing.swift */,
 				5E1F7DBD227D8B8B00713C0B /* MonsterViewController.swift */,
 				5EE2C926228FF53800E5C737 /* CollabViewController.swift */,
@@ -137,6 +151,7 @@
 				5EDFEF4A228DB3370064E1EF /* MonsterBookViewController.swift */,
 				D2B261992285335D00611412 /* GuidePadMonsterDB.xcdatamodeld */,
 				5E1F7DC1227D8B8B00713C0B /* Main.storyboard */,
+				D29DDA4A22B2490300D48504 /* jsonTestView.swift */,
 				5E3140B722941B87002C0B9A /* MonsterPageController.swift */,
 				D20BD3572293ECE00060D6D9 /* StatGraph.swift */,
 				5E1F7DBF227D8B8B00713C0B /* SecondViewController.swift */,
@@ -336,13 +351,18 @@
 			files = (
 				D20BD3582293ECE00060D6D9 /* StatGraph.swift in Sources */,
 				5EDFEF4B228DB3370064E1EF /* MonsterBookViewController.swift in Sources */,
+				D29DDA4B22B2490300D48504 /* jsonTestView.swift in Sources */,
 				5EA019892280A3B30017D28E /* MonsterInfoJSONthing.swift in Sources */,
 				5E41E34F228587D500C9FB6F /* DungeonViewController.swift in Sources */,
+				D29DDA4922B247A500D48504 /* Monsters+CoreDataProperties.swift in Sources */,
 				5EE2C927228FF53800E5C737 /* CollabViewController.swift in Sources */,
+				D29DDA3F22B23C1A00D48504 /* NetworkingService.swift in Sources */,
+				D29DDA4822B247A500D48504 /* Monsters+CoreDataClass.swift in Sources */,
 				5E1F7DEC227D8C6600713C0B /* Monster.swift in Sources */,
 				5E774BD0227D94DA00EC2FBF /* MonsterTableViewCell.swift in Sources */,
 				5E3140B822941B87002C0B9A /* MonsterPageController.swift in Sources */,
 				5E774BD2227D9CEC00EC2FBF /* MonsterTableViewController.swift in Sources */,
+				D29DDA4122B23E0300D48504 /* PersistenceService.swift in Sources */,
 				5E1F7DC0227D8B8B00713C0B /* SecondViewController.swift in Sources */,
 				5E1F7DBC227D8B8B00713C0B /* AppDelegate.swift in Sources */,
 				5E1F7DBE227D8B8B00713C0B /* MonsterViewController.swift in Sources */,
