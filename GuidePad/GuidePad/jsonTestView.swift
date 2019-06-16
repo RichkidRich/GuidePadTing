@@ -26,7 +26,7 @@ class jsonTest: UIViewController {
                 
                 do{
                     let json = try? JSON(data: data)
-                    for numbers in 4258...4259 {
+                    for numbers in 4417...4418 {
                         let idd = json!["card"][numbers][0]
                         let namee = json!["card"][numbers][1]
                         let attributee = json!["card"][numbers][2]
@@ -84,14 +84,26 @@ class jsonTest: UIViewController {
                         let bitFlag44 = json!["card"][numbers][54]
                         let bitFlag55 = json!["card"][numbers][55]
                         let bitFlag66 = json!["card"][numbers][56]
-                        let bitFlag77 = json!["card"][numbers][57]
-                        let enemySkillCountt = json!["card"][numbers][58]
-                        let enemySkillIDD = json!["card"][numbers][59]
-                        let enemySkillChancee = json!["card"][numbers][60]
-                        let enemySomethingg = json!["card"][numbers][61]
-                        let numberOfAwakeningss = json!["card"][numbers][62]
+                        let enemySkillCountt = json!["card"][numbers][57]
+                        let enemySkillIDD = Int32(0)
+                        let enemySkillChancee = Int32(0)
+                        let enemySomethingg = Int32(0)
+                        var numberOfAwakeningss = json!["card"][numbers][58]
+                        if enemySkillCountt > 0 {
+                            for i in 0...enemySkillCountt.intValue-1 {
+                                let enemySkillIDD = json!["card"][numbers][58+(3*i)]
+                                let enemySkillChancee = json!["card"][numbers][59+(3*i)]
+                                let enemySomethingg = json!["card"][numbers][60+(3*i)]
+                                print(enemySkillIDD)
+                            }
+                            print("ENEMY HAS SKILLS")
+                            numberOfAwakeningss = json!["card"][numbers][58+(3*enemySkillCountt.intValue)]
+                            print("ENEMY HAS ", numberOfAwakeningss, " AWAKENINGS")
+                        }
                         
-                        var awokenIndex = 63
+                        
+                        
+                        var awokenIndex = 59+(3*enemySkillCountt.intValue)
                         var awakening11 = 0 as Int32
                         var awakening22 = 0 as Int32
                         var awakening33 = 0 as Int32
@@ -284,11 +296,15 @@ class jsonTest: UIViewController {
                         monster.bitFlag4 = bitFlag44.int32Value
                         monster.bitFlag5 = bitFlag55.int32Value
                         monster.bitFlag6 = bitFlag66.int32Value
-                        monster.bitFlag7 = bitFlag77.int32Value
                         monster.enemySkillCount = enemySkillCountt.int32Value
-                        monster.enemySkillID = enemySkillIDD.int32Value
-                        monster.enemySkillChance = enemySkillChancee.int32Value
-                        monster.enemySomething = enemySomethingg.int32Value
+                        monster.enemySkillID = Int32(0)
+                        monster.enemySkillChance = Int32(0)
+                        monster.enemySomething = Int32(0)
+                        if monster.enemySkillCount < 1 {
+                            monster.enemySkillID = Int32(enemySkillIDD)
+                            monster.enemySkillChance = Int32(enemySkillChancee)
+                            monster.enemySomething = Int32(enemySomethingg)
+                        }
                         monster.numberOfAwakenings = numberOfAwakeningss.int32Value
                         monster.awakening1 = awakening11
                         monster.awakening2 = awakening22
