@@ -85,15 +85,15 @@ class jsonTest: UIViewController {
                         let bitFlag55 = json!["card"][numbers][55]
                         let bitFlag66 = json!["card"][numbers][56]
                         let enemySkillCountt = json!["card"][numbers][57]
-                        let enemySkillIDD = Int32(0)
-                        let enemySkillChancee = Int32(0)
-                        let enemySomethingg = Int32(0)
+                        var enemySkillIDD = Int32(0)
+                        var enemySkillChancee = Int32(0)
+                        var enemySomethingg = Int32(0)
                         var numberOfAwakeningss = json!["card"][numbers][58]
                         if enemySkillCountt > 0 {
                             for i in 0...enemySkillCountt.intValue-1 {
-                                let enemySkillIDD = json!["card"][numbers][58+(3*i)]
-                                let enemySkillChancee = json!["card"][numbers][59+(3*i)]
-                                let enemySomethingg = json!["card"][numbers][60+(3*i)]
+                                enemySkillIDD = json!["card"][numbers][58+(3*i)].int32Value
+                                enemySkillChancee = json!["card"][numbers][59+(3*i)].int32Value
+                                enemySomethingg = json!["card"][numbers][60+(3*i)].int32Value
                                 print(enemySkillIDD)
                             }
                             print("ENEMY HAS SKILLS")
@@ -300,7 +300,7 @@ class jsonTest: UIViewController {
                         monster.enemySkillID = Int32(0)
                         monster.enemySkillChance = Int32(0)
                         monster.enemySomething = Int32(0)
-                        if monster.enemySkillCount < 1 {
+                        if monster.enemySkillCount > 0 {
                             monster.enemySkillID = Int32(enemySkillIDD)
                             monster.enemySkillChance = Int32(enemySkillChancee)
                             monster.enemySomething = Int32(enemySomethingg)
