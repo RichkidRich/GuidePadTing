@@ -29,7 +29,16 @@ extension Monsters {
     @NSManaged public var groupingKey: Int32
     @NSManaged public var baseForm: Int32
     @NSManaged public var superAwakenings: String?
-    @NSManaged public var awakenings: String?
+    @NSManaged public var awakening1: Int32
+    @NSManaged public var awakening2: Int32
+    @NSManaged public var awakening3: Int32
+    @NSManaged public var awakening4: Int32
+    @NSManaged public var awakening5: Int32
+    @NSManaged public var awakening6: Int32
+    @NSManaged public var awakening7: Int32
+    @NSManaged public var awakening8: Int32
+    @NSManaged public var awakening9: Int32
+    @NSManaged public var numberOfAwakenings: Int32
     @NSManaged public var enemySomething: Int32
     @NSManaged public var enemySkillChance: Int32
     @NSManaged public var enemySkillID: Int32
@@ -55,11 +64,11 @@ extension Monsters {
     @NSManaged public var enemyEXP: Int32
     @NSManaged public var enemyCoins: Int32
     @NSManaged public var maxSomething: Int32
-    @NSManaged public var growthExponentDEF: Int32
+    @NSManaged public var growthExponentDEF: Float
     @NSManaged public var enemyL10DEF: Int32
     @NSManaged public var enemyL1DEF: Int32
-    @NSManaged public var growthExponentATK: Int32
-    @NSManaged public var growthExponentHP: Int32
+    @NSManaged public var growthExponentATK: Float
+    @NSManaged public var growthExponentHP: Float
     @NSManaged public var enemyL1ATK: Int32
     @NSManaged public var enemyL10ATK: Int32
     @NSManaged public var enemyL10HP: Int32
@@ -67,11 +76,11 @@ extension Monsters {
     @NSManaged public var enemyTurns: Int32
     @NSManaged public var leaderSkill: String?
     @NSManaged public var activeSkill: String?
-    @NSManaged public var xpExponent: Int32
+    @NSManaged public var xpExponent: Float
     @NSManaged public var maxXP: Int32
-    @NSManaged public var growthExponentRCVSE: Int32
-    @NSManaged public var growthExponentATKSE: Int32
-    @NSManaged public var growthExponentHPSE: Int32
+    @NSManaged public var growthExponentRCVSE: Float
+    @NSManaged public var growthExponentATKSE: Float
+    @NSManaged public var growthExponentHPSE: Float
     @NSManaged public var startRCV: Int32
     @NSManaged public var endRCV: Int32
     @NSManaged public var startATK: Int32
