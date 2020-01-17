@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftCharts
+import SwiftyJSON
 
 class MonsterPageController: UIViewController {
     

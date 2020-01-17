@@ -8,16 +8,16 @@
   "tvOS" : [
     {
       "name" : "SwiftCharts",
-      "hash" : "cbeb0252b30dc5569e6f8e840e6b63db95e6075e189d917e23577ebf12cec56c",
-      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+      "hash" : "3fdcd609031c565a97f95ec8f34525905a1e850f60610f0ad1baad550fa66c7d",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
     }
   ],
   "commitish" : "0.6.5",
   "iOS" : [
     {
       "name" : "SwiftCharts",
-      "hash" : "d894f4de0386798ebcd0709af2378265139e11093038b12d933119788d7ac024",
-      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+      "hash" : "866a6148745752d09c7218a00dbe127001e38caa3d74c4ec11ee1cda46b6c652",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
     }
   ]
 }

@@ -2,30 +2,30 @@
   "Mac" : [
     {
       "name" : "SwiftyJSON",
-      "hash" : "07592578e462a040dffb9379078459c3c7854fd6fabda69b0b0ba234d833c3af",
-      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+      "hash" : "ee7ce92080f224d26ebfc8e4920d97861a10d9d2921c0ce1bd0d9e6829b8f8ea",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
     }
   ],
   "watchOS" : [
     {
       "name" : "SwiftyJSON",
-      "hash" : "7015cd01e0379643a1caa5ddddeee9157c0d93ade068ccabe1c0c00510f4dae5",
-      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+      "hash" : "75c6ca80187a68b1ff0cced9b17abff762537abced2e913444f4611cbc157eb5",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
     }
   ],
   "tvOS" : [
     {
       "name" : "SwiftyJSON",
-      "hash" : "426bc54f29b4c5efcb4b2f903ad2bf7ba8a723ff07480ddf2a51e1592a7a8630",
-      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+      "hash" : "06a88b15de64cc97eee771c5878fe09b83c3dc36f81cd8d993fa457cd8e17058",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
     }
   ],
   "commitish" : "5.0.0",
   "iOS" : [
     {
       "name" : "SwiftyJSON",
-      "hash" : "6cf8b6317a86ed7dd821d7008059798ba8a393205eabd8b4e42963c9134cd86a",
-      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+      "hash" : "4b63cb92dbcc247e57932bd3e473cb211c49bb5fc7c7a40ba6965ed6fcfe1c9c",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
     }
   ]
 }

@@ -8,11 +8,8 @@
 
 import Foundation
 import UIKit
-import SwiftCharts
 
 class statGraph : UIViewController {
-    
-    var chartView: BarsChart!
     
     override func viewDidLoad() {
         super.viewDidLoad()
